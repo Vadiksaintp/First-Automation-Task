@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
             System.setProperty("webdriver.chrome.driver", "C:\\Users\\v.ilichev\\Desktop\\Automation\\chromedriver.exe");
 
             WebDriver driver = new ChromeDriver();
-
             driver.get("https://www.google.com");
 
             System.out.println("Page title is: " + driver.getTitle());

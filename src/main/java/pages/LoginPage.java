@@ -11,28 +11,28 @@ public class LoginPage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    // 1. Локаторы элементов на странице логина
-    private By usernameField = By.id("username");     // поле логина
-    private By passwordField = By.id("password");     // поле пароля
-    private By loginButton = By.xpath("//*[@id='loginForm']/button");       // кнопка входа
+    // 1. Element locators on the login page
+    private By usernameField = By.id("username");     // login field
+    private By passwordField = By.id("password");     // password field
+    private By loginButton = By.xpath("//*[@id='loginForm']/button");       // login button
 
-    // 2. Конструктор, принимающий WebDriver
+    // 2. Constructor that accepts WebDriver
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    // 3. Метод для ввода логина
+    // 3. Method for entering login
     public void enterUsername(String username) {
         driver.findElement(usernameField).sendKeys(username);
     }
 
-    // 4. Метод для ввода пароля
+    // 4. Method for entering password
     public void enterPassword(String password) {
         driver.findElement(passwordField).sendKeys(password);
     }
 
-    // 5. Метод для нажатия на кнопку "Login"
+    // 5. Method for clicking the "Login" button
     public void clickLogin() {
         driver.findElement(loginButton).click();
     }

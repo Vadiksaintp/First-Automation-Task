@@ -13,7 +13,7 @@ import utils.ConfigReader;
 
 import java.time.Duration;
 
-public class CommonSteps {
+ class CommonSteps {
 
     WebDriver driver;
     LoginPage loginPage;
@@ -63,7 +63,7 @@ public class CommonSteps {
             System.out.println("Dashboard Header Visible: " + dashboardHeader.isDisplayed());
 
             // Validate the dashboard header visibility
-         //   Assertions.assertTrue(dashboardHeader.isDisplayed(), "Dashboard header is not visible");
+            //   Assertions.assertTrue(dashboardHeader.isDisplayed(), "Dashboard header is not visible");
 
 
         } catch (Exception e) {
