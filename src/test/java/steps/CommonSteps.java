@@ -13,10 +13,10 @@ import utils.ConfigReader;
 
 import java.time.Duration;
 
- class CommonSteps {
+ public class CommonSteps {
 
-    WebDriver driver;
-    LoginPage loginPage;
+    private WebDriver driver;
+    private LoginPage loginPage;
 
     @Given("I open the Integration CTRL login page")
     public void i_open_login_page() {
@@ -63,7 +63,7 @@ import java.time.Duration;
             System.out.println("Dashboard Header Visible: " + dashboardHeader.isDisplayed());
 
             // Validate the dashboard header visibility
-            //   Assertions.assertTrue(dashboardHeader.isDisplayed(), "Dashboard header is not visible");
+            // Assertions.assertTrue(dashboardHeader.isDisplayed(), "Dashboard header is not visible");
 
 
         } catch (Exception e) {
