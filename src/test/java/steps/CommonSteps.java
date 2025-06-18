@@ -62,9 +62,6 @@ import java.time.Duration;
             System.out.println("Dashboard Header Found: " + (dashboardHeader != null));
             System.out.println("Dashboard Header Visible: " + dashboardHeader.isDisplayed());
 
-            // Validate the dashboard header visibility
-            // Assertions.assertTrue(dashboardHeader.isDisplayed(), "Dashboard header is not visible");
-
 
         } catch (Exception e) {
             System.out.println("Dashboard header not found or not visible.");
